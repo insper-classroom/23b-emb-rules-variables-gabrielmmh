@@ -1,13 +1,14 @@
 #include "stdio.h"
 
 // ..
-int a = 0; // variavel global
 
 void main(void) {
+    int a = 0; 
     int b = 0;
 
-    void foo(void) {
+    int foo(int a) {
     a = a + 1; // acessa variavel global
+    return a;
 }       
 
     while (1) {
